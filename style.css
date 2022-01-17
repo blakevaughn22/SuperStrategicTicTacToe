@@ -1,0 +1,93 @@
+/* Author: Blake Vaughn 
+*  Rev: 1.0
+*/
+body {
+    font-family: "Arial", sans-serif;
+}
+section {
+    text-align: center;
+}
+.game--container {
+	background-color:white;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+	width:1000px;
+	height:1000px;
+    margin: 50px auto;
+}
+.game {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: 10px 10px;
+}
+.board {
+    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: 2px 2px;
+}
+.cell {
+    font-family: "Permanent Marker", cursive;
+	background-color: transparent;
+	color:white;
+    width:30px;
+    height: 30px;
+    border: 1px solid #333333;
+    cursor: pointer;
+    line-height: 30px;
+    font-size: 25px;
+}
+.game--start {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.game--restart {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.counters {
+    width: 100%;
+}
+.playerO {
+    vertical-align: middle;
+    float:left;
+    width: 50%;
+}
+.playerX {
+    vertical-align: middle;
+    float:left;
+    width: 50%;
+}
+.playerOmoves {
+    vertical-align: middle;
+    float:left;
+    width: 50%;
+    height: 100px;
+    overflow: auto;
+}
+.playerXmoves {
+    vertical-align: middle;
+    float:left;
+    width: 50%;
+    height: 100px;
+    overflow: auto;
+}

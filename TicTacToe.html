@@ -1,0 +1,940 @@
+<!--Author: Blake Vaughn-->
+<!--Rev: 1.0-->
+<!doctype html>
+<html>
+<head>
+    <title>Super Strategic Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1 class="game--title">Super Strategic Tic Tac Toe</h1>
+        <div class="game--container">
+			<div class="game">
+				<div id="1000" data-cell-index="1000" class="board">
+					<div id="0" data-cell-index="0" class="cell"></div>
+					<div id="1" data-cell-index="1" class="cell"></div>
+					<div id="2" data-cell-index="2" class="cell"></div>
+					<div id="3" data-cell-index="3" class="cell"></div>
+					<div id="4" data-cell-index="4" class="cell"></div>
+					<div id="5" data-cell-index="5" class="cell"></div>
+					<div id="6" data-cell-index="6" class="cell"></div>
+					<div id="7" data-cell-index="7" class="cell"></div>
+					<div id="8" data-cell-index="8" class="cell"></div>
+				</div>
+				<div id="1001" data-cell-index="1001" class="board">
+					<div id="10" data-cell-index="10" class="cell"></div>
+					<div id="11" data-cell-index="11" class="cell"></div>
+					<div id="12" data-cell-index="12" class="cell"></div>
+					<div id="13" data-cell-index="13" class="cell"></div>
+					<div id="14" data-cell-index="14" class="cell"></div>
+					<div id="15" data-cell-index="15" class="cell"></div>
+					<div id="16" data-cell-index="16" class="cell"></div>
+					<div id="17" data-cell-index="17" class="cell"></div>
+					<div id="18" data-cell-index="18" class="cell"></div>
+				</div>
+				<div id="1002" data-cell-index="1002" class="board">
+					<div id="20" data-cell-index="20" class="cell"></div>
+					<div id="21" data-cell-index="21" class="cell"></div>
+					<div id="22" data-cell-index="22" class="cell"></div>
+					<div id="23" data-cell-index="23" class="cell"></div>
+					<div id="24" data-cell-index="24" class="cell"></div>
+					<div id="25" data-cell-index="25" class="cell"></div>
+					<div id="26" data-cell-index="26" class="cell"></div>
+					<div id="27" data-cell-index="27" class="cell"></div>
+					<div id="28" data-cell-index="28" class="cell"></div>
+				</div>
+				<div id="1003" data-cell-index="1003" class="board">
+					<div id="30" data-cell-index="30" class="cell"></div>
+					<div id="31" data-cell-index="31" class="cell"></div>
+					<div id="32" data-cell-index="32" class="cell"></div>
+					<div id="33" data-cell-index="33" class="cell"></div>
+					<div id="34" data-cell-index="34" class="cell"></div>
+					<div id="35" data-cell-index="35" class="cell"></div>
+					<div id="36" data-cell-index="36" class="cell"></div>
+					<div id="37" data-cell-index="37" class="cell"></div>
+					<div id="38" data-cell-index="38" class="cell"></div>
+				</div>
+				<div id="1004" data-cell-index="1004" class="board">
+					<div id="40" data-cell-index="40" class="cell"></div>
+					<div id="41" data-cell-index="41" class="cell"></div>
+					<div id="42" data-cell-index="42" class="cell"></div>
+					<div id="43" data-cell-index="43" class="cell"></div>
+					<div id="44" data-cell-index="44" class="cell"></div>
+					<div id="45" data-cell-index="45" class="cell"></div>
+					<div id="46" data-cell-index="46" class="cell"></div>
+					<div id="47" data-cell-index="47" class="cell"></div>
+					<div id="48" data-cell-index="48" class="cell"></div>
+				</div>
+				<div id="1005" data-cell-index="1005" class="board">
+					<div id="50" data-cell-index="50" class="cell"></div>
+					<div id="51" data-cell-index="51" class="cell"></div>
+					<div id="52" data-cell-index="52" class="cell"></div>
+					<div id="53" data-cell-index="53" class="cell"></div>
+					<div id="54" data-cell-index="54" class="cell"></div>
+					<div id="55" data-cell-index="55" class="cell"></div>
+					<div id="56" data-cell-index="56" class="cell"></div>
+					<div id="57" data-cell-index="57" class="cell"></div>
+					<div id="58" data-cell-index="58" class="cell"></div>
+				</div>
+				<div id="1006" data-cell-index="1006" class="board">
+					<div id="60" data-cell-index="60" class="cell"></div>
+					<div id="61" data-cell-index="61" class="cell"></div>
+					<div id="62" data-cell-index="62" class="cell"></div>
+					<div id="63" data-cell-index="63" class="cell"></div>
+					<div id="64" data-cell-index="64" class="cell"></div>
+					<div id="65" data-cell-index="65" class="cell"></div>
+					<div id="66" data-cell-index="66" class="cell"></div>
+					<div id="67" data-cell-index="67" class="cell"></div>
+					<div id="68" data-cell-index="68" class="cell"></div>
+				</div>
+				<div id="1007" data-cell-index="1007" class="board">
+					<div id="70" data-cell-index="70" class="cell"></div>
+					<div id="71" data-cell-index="71" class="cell"></div>
+					<div id="72" data-cell-index="72" class="cell"></div>
+					<div id="73" data-cell-index="73" class="cell"></div>
+					<div id="74" data-cell-index="74" class="cell"></div>
+					<div id="75" data-cell-index="75" class="cell"></div>
+					<div id="76" data-cell-index="76" class="cell"></div>
+					<div id="77" data-cell-index="77" class="cell"></div>
+					<div id="78" data-cell-index="78" class="cell"></div>
+				</div>
+				<div id="1008" data-cell-index="1008" class="board">
+					<div id="80" data-cell-index="80" class="cell"></div>
+					<div id="81" data-cell-index="81" class="cell"></div>
+					<div id="82" data-cell-index="82" class="cell"></div>
+					<div id="83" data-cell-index="83" class="cell"></div>
+					<div id="84" data-cell-index="84" class="cell"></div>
+					<div id="85" data-cell-index="85" class="cell"></div>
+					<div id="86" data-cell-index="86" class="cell"></div>
+					<div id="87" data-cell-index="87" class="cell"></div>
+					<div id="88" data-cell-index="88" class="cell"></div>
+				</div>
+			</div>
+			<div class="game">
+				<div id="2000" data-cell-index="2000" class="board">
+					<div id="100" data-cell-index="100" class="cell"></div>
+					<div id="101" data-cell-index="101" class="cell"></div>
+					<div id="102" data-cell-index="102" class="cell"></div>
+					<div id="103" data-cell-index="103" class="cell"></div>
+					<div id="104" data-cell-index="104" class="cell"></div>
+					<div id="105" data-cell-index="105" class="cell"></div>
+					<div id="106" data-cell-index="106" class="cell"></div>
+					<div id="107" data-cell-index="107" class="cell"></div>
+					<div id="108" data-cell-index="108" class="cell"></div>
+				</div>
+				<div id="2001" data-cell-index="2001" class="board">
+					<div id="110" data-cell-index="110" class="cell"></div>
+					<div id="111" data-cell-index="111" class="cell"></div>
+					<div id="112" data-cell-index="112" class="cell"></div>
+					<div id="113" data-cell-index="113" class="cell"></div>
+					<div id="114" data-cell-index="114" class="cell"></div>
+					<div id="115" data-cell-index="115" class="cell"></div>
+					<div id="116" data-cell-index="116" class="cell"></div>
+					<div id="117" data-cell-index="117" class="cell"></div>
+					<div id="118" data-cell-index="118" class="cell"></div>
+				</div>
+				<div id="2002" data-cell-index="2002" class="board">
+					<div id="120" data-cell-index="120" class="cell"></div>
+					<div id="121" data-cell-index="121" class="cell"></div>
+					<div id="122" data-cell-index="122" class="cell"></div>
+					<div id="123" data-cell-index="123" class="cell"></div>
+					<div id="124" data-cell-index="124" class="cell"></div>
+					<div id="125" data-cell-index="125" class="cell"></div>
+					<div id="126" data-cell-index="126" class="cell"></div>
+					<div id="127" data-cell-index="127" class="cell"></div>
+					<div id="128" data-cell-index="128" class="cell"></div>
+				</div>
+				<div id="2003" data-cell-index="2003" class="board">
+					<div id="130" data-cell-index="130" class="cell"></div>
+					<div id="131" data-cell-index="131" class="cell"></div>
+					<div id="132" data-cell-index="132" class="cell"></div>
+					<div id="133" data-cell-index="133" class="cell"></div>
+					<div id="134" data-cell-index="134" class="cell"></div>
+					<div id="135" data-cell-index="135" class="cell"></div>
+					<div id="136" data-cell-index="136" class="cell"></div>
+					<div id="137" data-cell-index="137" class="cell"></div>
+					<div id="138" data-cell-index="138" class="cell"></div>
+				</div>
+				<div id="2004" data-cell-index="2004" class="board">
+					<div id="140" data-cell-index="140" class="cell"></div>
+					<div id="141" data-cell-index="141" class="cell"></div>
+					<div id="142" data-cell-index="142" class="cell"></div>
+					<div id="143" data-cell-index="143" class="cell"></div>
+					<div id="144" data-cell-index="144" class="cell"></div>
+					<div id="145" data-cell-index="145" class="cell"></div>
+					<div id="146" data-cell-index="146" class="cell"></div>
+					<div id="147" data-cell-index="147" class="cell"></div>
+					<div id="148" data-cell-index="148" class="cell"></div>
+				</div>
+				<div id="2005" data-cell-index="2005" class="board">
+					<div id="150" data-cell-index="150" class="cell"></div>
+					<div id="151" data-cell-index="151" class="cell"></div>
+					<div id="152" data-cell-index="152" class="cell"></div>
+					<div id="153" data-cell-index="153" class="cell"></div>
+					<div id="154" data-cell-index="154" class="cell"></div>
+					<div id="155" data-cell-index="155" class="cell"></div>
+					<div id="156" data-cell-index="156" class="cell"></div>
+					<div id="157" data-cell-index="157" class="cell"></div>
+					<div id="158" data-cell-index="158" class="cell"></div>
+				</div>
+				<div id="2006" data-cell-index="2006" class="board">
+					<div id="160" data-cell-index="160" class="cell"></div>
+					<div id="161" data-cell-index="161" class="cell"></div>
+					<div id="162" data-cell-index="162" class="cell"></div>
+					<div id="163" data-cell-index="163" class="cell"></div>
+					<div id="164" data-cell-index="164" class="cell"></div>
+					<div id="165" data-cell-index="165" class="cell"></div>
+					<div id="166" data-cell-index="166" class="cell"></div>
+					<div id="167" data-cell-index="167" class="cell"></div>
+					<div id="168" data-cell-index="168" class="cell"></div>
+				</div>
+				<div id="2007" data-cell-index="2007" class="board">
+					<div id="170" data-cell-index="170" class="cell"></div>
+					<div id="171" data-cell-index="171" class="cell"></div>
+					<div id="172" data-cell-index="172" class="cell"></div>
+					<div id="173" data-cell-index="173" class="cell"></div>
+					<div id="174" data-cell-index="174" class="cell"></div>
+					<div id="175" data-cell-index="175" class="cell"></div>
+					<div id="176" data-cell-index="176" class="cell"></div>
+					<div id="177" data-cell-index="177" class="cell"></div>
+					<div id="178" data-cell-index="178" class="cell"></div>
+				</div>
+				<div id="2008" data-cell-index="2008" class="board">
+					<div id="180" data-cell-index="180" class="cell"></div>
+					<div id="181" data-cell-index="181" class="cell"></div>
+					<div id="182" data-cell-index="182" class="cell"></div>
+					<div id="183" data-cell-index="183" class="cell"></div>
+					<div id="184" data-cell-index="184" class="cell"></div>
+					<div id="185" data-cell-index="185" class="cell"></div>
+					<div id="186" data-cell-index="186" class="cell"></div>
+					<div id="187" data-cell-index="187" class="cell"></div>
+					<div id="188" data-cell-index="188" class="cell"></div>
+				</div>
+			</div>
+			<div class="game">
+				<div id="3000" data-cell-index="3000" class="board">
+					<div id="200" data-cell-index="200" class="cell"></div>
+					<div id="201" data-cell-index="201" class="cell"></div>
+					<div id="202" data-cell-index="202" class="cell"></div>
+					<div id="203" data-cell-index="203" class="cell"></div>
+					<div id="204" data-cell-index="204" class="cell"></div>
+					<div id="205" data-cell-index="205" class="cell"></div>
+					<div id="206" data-cell-index="206" class="cell"></div>
+					<div id="207" data-cell-index="207" class="cell"></div>
+					<div id="208" data-cell-index="208" class="cell"></div>
+				</div>
+				<div id="3001" data-cell-index="3001" class="board">
+					<div id="210" data-cell-index="210" class="cell"></div>
+					<div id="211" data-cell-index="211" class="cell"></div>
+					<div id="212" data-cell-index="212" class="cell"></div>
+					<div id="213" data-cell-index="213" class="cell"></div>
+					<div id="214" data-cell-index="214" class="cell"></div>
+					<div id="215" data-cell-index="215" class="cell"></div>
+					<div id="216" data-cell-index="216" class="cell"></div>
+					<div id="217" data-cell-index="217" class="cell"></div>
+					<div id="218" data-cell-index="218" class="cell"></div>
+				</div>
+				<div id="3002" data-cell-index="3002" class="board">
+					<div id="220" data-cell-index="220" class="cell"></div>
+					<div id="221" data-cell-index="221" class="cell"></div>
+					<div id="222" data-cell-index="222" class="cell"></div>
+					<div id="223" data-cell-index="223" class="cell"></div>
+					<div id="224" data-cell-index="224" class="cell"></div>
+					<div id="225" data-cell-index="225" class="cell"></div>
+					<div id="226" data-cell-index="226" class="cell"></div>
+					<div id="227" data-cell-index="227" class="cell"></div>
+					<div id="228" data-cell-index="228" class="cell"></div>
+				</div>
+				<div id="3003" data-cell-index="3003" class="board">
+					<div id="230" data-cell-index="230" class="cell"></div>
+					<div id="231" data-cell-index="231" class="cell"></div>
+					<div id="232" data-cell-index="232" class="cell"></div>
+					<div id="233" data-cell-index="233" class="cell"></div>
+					<div id="234" data-cell-index="234" class="cell"></div>
+					<div id="235" data-cell-index="235" class="cell"></div>
+					<div id="236" data-cell-index="236" class="cell"></div>
+					<div id="237" data-cell-index="237" class="cell"></div>
+					<div id="238" data-cell-index="238" class="cell"></div>
+				</div>
+				<div id="3004" data-cell-index="3004" class="board">
+					<div id="240" data-cell-index="240" class="cell"></div>
+					<div id="241" data-cell-index="241" class="cell"></div>
+					<div id="242" data-cell-index="242" class="cell"></div>
+					<div id="243" data-cell-index="243" class="cell"></div>
+					<div id="244" data-cell-index="244" class="cell"></div>
+					<div id="245" data-cell-index="245" class="cell"></div>
+					<div id="246" data-cell-index="246" class="cell"></div>
+					<div id="247" data-cell-index="247" class="cell"></div>
+					<div id="248" data-cell-index="248" class="cell"></div>
+				</div>
+				<div id="3005" data-cell-index="3005" class="board">
+					<div id="250" data-cell-index="250" class="cell"></div>
+					<div id="251" data-cell-index="251" class="cell"></div>
+					<div id="252" data-cell-index="252" class="cell"></div>
+					<div id="253" data-cell-index="253" class="cell"></div>
+					<div id="254" data-cell-index="254" class="cell"></div>
+					<div id="255" data-cell-index="255" class="cell"></div>
+					<div id="256" data-cell-index="256" class="cell"></div>
+					<div id="257" data-cell-index="257" class="cell"></div>
+					<div id="258" data-cell-index="258" class="cell"></div>
+				</div>
+				<div id="3006" data-cell-index="3006" class="board">
+					<div id="260" data-cell-index="260" class="cell"></div>
+					<div id="261" data-cell-index="261" class="cell"></div>
+					<div id="262" data-cell-index="262" class="cell"></div>
+					<div id="263" data-cell-index="263" class="cell"></div>
+					<div id="264" data-cell-index="264" class="cell"></div>
+					<div id="265" data-cell-index="265" class="cell"></div>
+					<div id="266" data-cell-index="266" class="cell"></div>
+					<div id="267" data-cell-index="267" class="cell"></div>
+					<div id="268" data-cell-index="268" class="cell"></div>
+				</div>
+				<div id="3007" data-cell-index="3007" class="board">
+					<div id="270" data-cell-index="270" class="cell"></div>
+					<div id="271" data-cell-index="271" class="cell"></div>
+					<div id="272" data-cell-index="272" class="cell"></div>
+					<div id="273" data-cell-index="273" class="cell"></div>
+					<div id="274" data-cell-index="274" class="cell"></div>
+					<div id="275" data-cell-index="275" class="cell"></div>
+					<div id="276" data-cell-index="276" class="cell"></div>
+					<div id="277" data-cell-index="277" class="cell"></div>
+					<div id="278" data-cell-index="278" class="cell"></div>
+				</div>
+				<div id="3008" data-cell-index="3008" class="board">
+					<div id="280" data-cell-index="280" class="cell"></div>
+					<div id="281" data-cell-index="281" class="cell"></div>
+					<div id="282" data-cell-index="282" class="cell"></div>
+					<div id="283" data-cell-index="283" class="cell"></div>
+					<div id="284" data-cell-index="284" class="cell"></div>
+					<div id="285" data-cell-index="285" class="cell"></div>
+					<div id="286" data-cell-index="286" class="cell"></div>
+					<div id="287" data-cell-index="287" class="cell"></div>
+					<div id="288" data-cell-index="288" class="cell"></div>
+				</div>
+			</div>
+			<div class="game">
+				<div id="4000" data-cell-index="4000" class="board">
+					<div id="300" data-cell-index="300" class="cell"></div>
+					<div id="301" data-cell-index="301" class="cell"></div>
+					<div id="302" data-cell-index="302" class="cell"></div>
+					<div id="303" data-cell-index="303" class="cell"></div>
+					<div id="304" data-cell-index="304" class="cell"></div>
+					<div id="305" data-cell-index="305" class="cell"></div>
+					<div id="306" data-cell-index="306" class="cell"></div>
+					<div id="307" data-cell-index="307" class="cell"></div>
+					<div id="308" data-cell-index="308" class="cell"></div>
+				</div>
+				<div id="4001" data-cell-index="4001" class="board">
+					<div id="310" data-cell-index="310" class="cell"></div>
+					<div id="311" data-cell-index="311" class="cell"></div>
+					<div id="312" data-cell-index="312" class="cell"></div>
+					<div id="313" data-cell-index="313" class="cell"></div>
+					<div id="314" data-cell-index="314" class="cell"></div>
+					<div id="315" data-cell-index="315" class="cell"></div>
+					<div id="316" data-cell-index="316" class="cell"></div>
+					<div id="317" data-cell-index="317" class="cell"></div>
+					<div id="318" data-cell-index="318" class="cell"></div>
+				</div>
+				<div id="4002" data-cell-index="4002" class="board">
+					<div id="320" data-cell-index="320" class="cell"></div>
+					<div id="321" data-cell-index="321" class="cell"></div>
+					<div id="322" data-cell-index="322" class="cell"></div>
+					<div id="323" data-cell-index="323" class="cell"></div>
+					<div id="324" data-cell-index="324" class="cell"></div>
+					<div id="325" data-cell-index="325" class="cell"></div>
+					<div id="326" data-cell-index="326" class="cell"></div>
+					<div id="327" data-cell-index="327" class="cell"></div>
+					<div id="328" data-cell-index="328" class="cell"></div>
+				</div>
+				<div id="4003" data-cell-index="4003" class="board">
+					<div id="330" data-cell-index="330" class="cell"></div>
+					<div id="331" data-cell-index="331" class="cell"></div>
+					<div id="332" data-cell-index="332" class="cell"></div>
+					<div id="333" data-cell-index="333" class="cell"></div>
+					<div id="334" data-cell-index="334" class="cell"></div>
+					<div id="335" data-cell-index="335" class="cell"></div>
+					<div id="336" data-cell-index="336" class="cell"></div>
+					<div id="337" data-cell-index="337" class="cell"></div>
+					<div id="338" data-cell-index="338" class="cell"></div>
+				</div>
+				<div id="4004" data-cell-index="4004" class="board">
+					<div id="340" data-cell-index="340" class="cell"></div>
+					<div id="341" data-cell-index="341" class="cell"></div>
+					<div id="342" data-cell-index="342" class="cell"></div>
+					<div id="343" data-cell-index="343" class="cell"></div>
+					<div id="344" data-cell-index="344" class="cell"></div>
+					<div id="345" data-cell-index="345" class="cell"></div>
+					<div id="346" data-cell-index="346" class="cell"></div>
+					<div id="347" data-cell-index="347" class="cell"></div>
+					<div id="348" data-cell-index="348" class="cell"></div>
+				</div>
+				<div id="4005" data-cell-index="4005" class="board">
+					<div id="350" data-cell-index="350" class="cell"></div>
+					<div id="351" data-cell-index="351" class="cell"></div>
+					<div id="352" data-cell-index="352" class="cell"></div>
+					<div id="353" data-cell-index="353" class="cell"></div>
+					<div id="354" data-cell-index="354" class="cell"></div>
+					<div id="355" data-cell-index="355" class="cell"></div>
+					<div id="356" data-cell-index="356" class="cell"></div>
+					<div id="357" data-cell-index="357" class="cell"></div>
+					<div id="358" data-cell-index="358" class="cell"></div>
+				</div>
+				<div id="4006" data-cell-index="4006" class="board">
+					<div id="360" data-cell-index="360" class="cell"></div>
+					<div id="361" data-cell-index="361" class="cell"></div>
+					<div id="362" data-cell-index="362" class="cell"></div>
+					<div id="363" data-cell-index="363" class="cell"></div>
+					<div id="364" data-cell-index="364" class="cell"></div>
+					<div id="365" data-cell-index="365" class="cell"></div>
+					<div id="366" data-cell-index="366" class="cell"></div>
+					<div id="367" data-cell-index="367" class="cell"></div>
+					<div id="368" data-cell-index="368" class="cell"></div>
+				</div>
+				<div id="4007" data-cell-index="4007" class="board">
+					<div id="370" data-cell-index="370" class="cell"></div>
+					<div id="371" data-cell-index="371" class="cell"></div>
+					<div id="372" data-cell-index="372" class="cell"></div>
+					<div id="373" data-cell-index="373" class="cell"></div>
+					<div id="374" data-cell-index="374" class="cell"></div>
+					<div id="375" data-cell-index="375" class="cell"></div>
+					<div id="376" data-cell-index="376" class="cell"></div>
+					<div id="377" data-cell-index="377" class="cell"></div>
+					<div id="378" data-cell-index="378" class="cell"></div>
+				</div>
+				<div id="4008" data-cell-index="4008" class="board">
+					<div id="380" data-cell-index="380" class="cell"></div>
+					<div id="381" data-cell-index="381" class="cell"></div>
+					<div id="382" data-cell-index="382" class="cell"></div>
+					<div id="383" data-cell-index="383" class="cell"></div>
+					<div id="384" data-cell-index="384" class="cell"></div>
+					<div id="385" data-cell-index="385" class="cell"></div>
+					<div id="386" data-cell-index="386" class="cell"></div>
+					<div id="387" data-cell-index="387" class="cell"></div>
+					<div id="388" data-cell-index="388" class="cell"></div>
+				</div>
+			</div>
+			<div class="game">
+				<div id="5000" data-cell-index="5000" class="board">
+					<div id="400" data-cell-index="400" class="cell"></div>
+					<div id="401" data-cell-index="401" class="cell"></div>
+					<div id="402" data-cell-index="402" class="cell"></div>
+					<div id="403" data-cell-index="403" class="cell"></div>
+					<div id="404" data-cell-index="404" class="cell"></div>
+					<div id="405" data-cell-index="405" class="cell"></div>
+					<div id="406" data-cell-index="406" class="cell"></div>
+					<div id="407" data-cell-index="407" class="cell"></div>
+					<div id="408" data-cell-index="408" class="cell"></div>
+				</div>
+				<div id="5001" data-cell-index="5001" class="board">
+					<div id="410" data-cell-index="410" class="cell"></div>
+					<div id="411" data-cell-index="411" class="cell"></div>
+					<div id="412" data-cell-index="412" class="cell"></div>
+					<div id="413" data-cell-index="413" class="cell"></div>
+					<div id="414" data-cell-index="414" class="cell"></div>
+					<div id="415" data-cell-index="415" class="cell"></div>
+					<div id="416" data-cell-index="416" class="cell"></div>
+					<div id="417" data-cell-index="417" class="cell"></div>
+					<div id="418" data-cell-index="418" class="cell"></div>
+				</div>
+				<div id="5002" data-cell-index="5002" class="board">
+					<div id="420" data-cell-index="420" class="cell"></div>
+					<div id="421" data-cell-index="421" class="cell"></div>
+					<div id="422" data-cell-index="422" class="cell"></div>
+					<div id="423" data-cell-index="423" class="cell"></div>
+					<div id="424" data-cell-index="424" class="cell"></div>
+					<div id="425" data-cell-index="425" class="cell"></div>
+					<div id="426" data-cell-index="426" class="cell"></div>
+					<div id="427" data-cell-index="427" class="cell"></div>
+					<div id="428" data-cell-index="428" class="cell"></div>
+				</div>
+				<div id="5003" data-cell-index="5003" class="board">
+					<div id="430" data-cell-index="430" class="cell"></div>
+					<div id="431" data-cell-index="431" class="cell"></div>
+					<div id="432" data-cell-index="432" class="cell"></div>
+					<div id="433" data-cell-index="433" class="cell"></div>
+					<div id="434" data-cell-index="434" class="cell"></div>
+					<div id="435" data-cell-index="435" class="cell"></div>
+					<div id="436" data-cell-index="436" class="cell"></div>
+					<div id="437" data-cell-index="437" class="cell"></div>
+					<div id="438" data-cell-index="438" class="cell"></div>
+				</div>
+				<div id="5004" data-cell-index="5004" class="board">
+					<div id="440" data-cell-index="440" class="cell"></div>
+					<div id="441" data-cell-index="441" class="cell"></div>
+					<div id="442" data-cell-index="442" class="cell"></div>
+					<div id="443" data-cell-index="443" class="cell"></div>
+					<div id="444" data-cell-index="444" class="cell"></div>
+					<div id="445" data-cell-index="445" class="cell"></div>
+					<div id="446" data-cell-index="446" class="cell"></div>
+					<div id="447" data-cell-index="447" class="cell"></div>
+					<div id="448" data-cell-index="448" class="cell"></div>
+				</div>
+				<div id="5005" data-cell-index="5005" class="board">
+					<div id="450" data-cell-index="450" class="cell"></div>
+					<div id="451" data-cell-index="451" class="cell"></div>
+					<div id="452" data-cell-index="452" class="cell"></div>
+					<div id="453" data-cell-index="453" class="cell"></div>
+					<div id="454" data-cell-index="454" class="cell"></div>
+					<div id="455" data-cell-index="455" class="cell"></div>
+					<div id="456" data-cell-index="456" class="cell"></div>
+					<div id="457" data-cell-index="457" class="cell"></div>
+					<div id="458" data-cell-index="458" class="cell"></div>
+				</div>
+				<div id="5006" data-cell-index="5006" class="board">
+					<div id="460" data-cell-index="460" class="cell"></div>
+					<div id="461" data-cell-index="461" class="cell"></div>
+					<div id="462" data-cell-index="462" class="cell"></div>
+					<div id="463" data-cell-index="463" class="cell"></div>
+					<div id="464" data-cell-index="464" class="cell"></div>
+					<div id="465" data-cell-index="465" class="cell"></div>
+					<div id="466" data-cell-index="466" class="cell"></div>
+					<div id="467" data-cell-index="467" class="cell"></div>
+					<div id="468" data-cell-index="468" class="cell"></div>
+				</div>
+				<div id="5007" data-cell-index="5007" class="board">
+					<div id="470" data-cell-index="470" class="cell"></div>
+					<div id="471" data-cell-index="471" class="cell"></div>
+					<div id="472" data-cell-index="472" class="cell"></div>
+					<div id="473" data-cell-index="473" class="cell"></div>
+					<div id="474" data-cell-index="474" class="cell"></div>
+					<div id="475" data-cell-index="475" class="cell"></div>
+					<div id="476" data-cell-index="476" class="cell"></div>
+					<div id="477" data-cell-index="477" class="cell"></div>
+					<div id="478" data-cell-index="478" class="cell"></div>
+				</div>
+				<div id="5008" data-cell-index="5008" class="board">
+					<div id="480" data-cell-index="480" class="cell"></div>
+					<div id="481" data-cell-index="481" class="cell"></div>
+					<div id="482" data-cell-index="482" class="cell"></div>
+					<div id="483" data-cell-index="483" class="cell"></div>
+					<div id="484" data-cell-index="484" class="cell"></div>
+					<div id="485" data-cell-index="485" class="cell"></div>
+					<div id="486" data-cell-index="486" class="cell"></div>
+					<div id="487" data-cell-index="487" class="cell"></div>
+					<div id="488" data-cell-index="488" class="cell"></div>
+				</div>
+			</div>
+			<div class="game">
+				<div id="6000" data-cell-index="6000" class="board">
+					<div id="500" data-cell-index="500" class="cell"></div>
+					<div id="501" data-cell-index="501" class="cell"></div>
+					<div id="502" data-cell-index="502" class="cell"></div>
+					<div id="503" data-cell-index="503" class="cell"></div>
+					<div id="504" data-cell-index="504" class="cell"></div>
+					<div id="505" data-cell-index="505" class="cell"></div>
+					<div id="506" data-cell-index="506" class="cell"></div>
+					<div id="507" data-cell-index="507" class="cell"></div>
+					<div id="508" data-cell-index="508" class="cell"></div>
+				</div>
+				<div id="6001" data-cell-index="6001" class="board">
+					<div id="510" data-cell-index="510" class="cell"></div>
+					<div id="511" data-cell-index="511" class="cell"></div>
+					<div id="512" data-cell-index="512" class="cell"></div>
+					<div id="513" data-cell-index="513" class="cell"></div>
+					<div id="514" data-cell-index="514" class="cell"></div>
+					<div id="515" data-cell-index="515" class="cell"></div>
+					<div id="516" data-cell-index="516" class="cell"></div>
+					<div id="517" data-cell-index="517" class="cell"></div>
+					<div id="518" data-cell-index="518" class="cell"></div>
+				</div>
+				<div id="6002" data-cell-index="6002" class="board">
+					<div id="520" data-cell-index="520" class="cell"></div>
+					<div id="521" data-cell-index="521" class="cell"></div>
+					<div id="522" data-cell-index="522" class="cell"></div>
+					<div id="523" data-cell-index="523" class="cell"></div>
+					<div id="524" data-cell-index="524" class="cell"></div>
+					<div id="525" data-cell-index="525" class="cell"></div>
+					<div id="526" data-cell-index="526" class="cell"></div>
+					<div id="527" data-cell-index="527" class="cell"></div>
+					<div id="528" data-cell-index="528" class="cell"></div>
+				</div>
+				<div id="6003" data-cell-index="6003" class="board">
+					<div id="530" data-cell-index="530" class="cell"></div>
+					<div id="531" data-cell-index="531" class="cell"></div>
+					<div id="532" data-cell-index="532" class="cell"></div>
+					<div id="533" data-cell-index="533" class="cell"></div>
+					<div id="534" data-cell-index="534" class="cell"></div>
+					<div id="535" data-cell-index="535" class="cell"></div>
+					<div id="536" data-cell-index="536" class="cell"></div>
+					<div id="537" data-cell-index="537" class="cell"></div>
+					<div id="538" data-cell-index="538" class="cell"></div>
+				</div>
+				<div id="6004" data-cell-index="6004" class="board">
+					<div id="540" data-cell-index="540" class="cell"></div>
+					<div id="541" data-cell-index="541" class="cell"></div>
+					<div id="542" data-cell-index="542" class="cell"></div>
+					<div id="543" data-cell-index="543" class="cell"></div>
+					<div id="544" data-cell-index="544" class="cell"></div>
+					<div id="545" data-cell-index="545" class="cell"></div>
+					<div id="546" data-cell-index="546" class="cell"></div>
+					<div id="547" data-cell-index="547" class="cell"></div>
+					<div id="548" data-cell-index="548" class="cell"></div>
+				</div>
+				<div id="6005" data-cell-index="6005" class="board">
+					<div id="550" data-cell-index="550" class="cell"></div>
+					<div id="551" data-cell-index="551" class="cell"></div>
+					<div id="552" data-cell-index="552" class="cell"></div>
+					<div id="553" data-cell-index="553" class="cell"></div>
+					<div id="554" data-cell-index="554" class="cell"></div>
+					<div id="555" data-cell-index="555" class="cell"></div>
+					<div id="556" data-cell-index="556" class="cell"></div>
+					<div id="557" data-cell-index="557" class="cell"></div>
+					<div id="558" data-cell-index="558" class="cell"></div>
+				</div>
+				<div id="6006" data-cell-index="6006" class="board">
+					<div id="560" data-cell-index="560" class="cell"></div>
+					<div id="561" data-cell-index="561" class="cell"></div>
+					<div id="562" data-cell-index="562" class="cell"></div>
+					<div id="563" data-cell-index="563" class="cell"></div>
+					<div id="564" data-cell-index="564" class="cell"></div>
+					<div id="565" data-cell-index="565" class="cell"></div>
+					<div id="566" data-cell-index="566" class="cell"></div>
+					<div id="567" data-cell-index="567" class="cell"></div>
+					<div id="568" data-cell-index="568" class="cell"></div>
+				</div>
+				<div id="6007" data-cell-index="6007" class="board">
+					<div id="570" data-cell-index="570" class="cell"></div>
+					<div id="571" data-cell-index="571" class="cell"></div>
+					<div id="572" data-cell-index="572" class="cell"></div>
+					<div id="573" data-cell-index="573" class="cell"></div>
+					<div id="574" data-cell-index="574" class="cell"></div>
+					<div id="575" data-cell-index="575" class="cell"></div>
+					<div id="576" data-cell-index="576" class="cell"></div>
+					<div id="577" data-cell-index="577" class="cell"></div>
+					<div id="578" data-cell-index="578" class="cell"></div>
+				</div>
+				<div id="6008" data-cell-index="6008" class="board">
+					<div id="580" data-cell-index="580" class="cell"></div>
+					<div id="581" data-cell-index="581" class="cell"></div>
+					<div id="582" data-cell-index="582" class="cell"></div>
+					<div id="583" data-cell-index="583" class="cell"></div>
+					<div id="584" data-cell-index="584" class="cell"></div>
+					<div id="585" data-cell-index="585" class="cell"></div>
+					<div id="586" data-cell-index="586" class="cell"></div>
+					<div id="587" data-cell-index="587" class="cell"></div>
+					<div id="588" data-cell-index="588" class="cell"></div>
+				</div>
+			</div>
+			<div class="game">
+				<div id="7000" data-cell-index="7000" class="board">
+					<div id="600" data-cell-index="600" class="cell"></div>
+					<div id="601" data-cell-index="601" class="cell"></div>
+					<div id="602" data-cell-index="602" class="cell"></div>
+					<div id="603" data-cell-index="603" class="cell"></div>
+					<div id="604" data-cell-index="604" class="cell"></div>
+					<div id="605" data-cell-index="605" class="cell"></div>
+					<div id="606" data-cell-index="606" class="cell"></div>
+					<div id="607" data-cell-index="607" class="cell"></div>
+					<div id="608" data-cell-index="608" class="cell"></div>
+				</div>
+				<div id="7001" data-cell-index="7001" class="board">
+					<div id="610" data-cell-index="610" class="cell"></div>
+					<div id="611" data-cell-index="611" class="cell"></div>
+					<div id="612" data-cell-index="612" class="cell"></div>
+					<div id="613" data-cell-index="613" class="cell"></div>
+					<div id="614" data-cell-index="614" class="cell"></div>
+					<div id="615" data-cell-index="615" class="cell"></div>
+					<div id="616" data-cell-index="616" class="cell"></div>
+					<div id="617" data-cell-index="617" class="cell"></div>
+					<div id="618" data-cell-index="618" class="cell"></div>
+				</div>
+				<div id="7002" data-cell-index="7002" class="board">
+					<div id="620" data-cell-index="620" class="cell"></div>
+					<div id="621" data-cell-index="621" class="cell"></div>
+					<div id="622" data-cell-index="622" class="cell"></div>
+					<div id="623" data-cell-index="623" class="cell"></div>
+					<div id="624" data-cell-index="624" class="cell"></div>
+					<div id="625" data-cell-index="625" class="cell"></div>
+					<div id="626" data-cell-index="626" class="cell"></div>
+					<div id="627" data-cell-index="627" class="cell"></div>
+					<div id="628" data-cell-index="628" class="cell"></div>
+				</div>
+				<div id="7003" data-cell-index="7003" class="board">
+					<div id="630" data-cell-index="630" class="cell"></div>
+					<div id="631" data-cell-index="631" class="cell"></div>
+					<div id="632" data-cell-index="632" class="cell"></div>
+					<div id="633" data-cell-index="633" class="cell"></div>
+					<div id="634" data-cell-index="634" class="cell"></div>
+					<div id="635" data-cell-index="635" class="cell"></div>
+					<div id="636" data-cell-index="636" class="cell"></div>
+					<div id="637" data-cell-index="637" class="cell"></div>
+					<div id="638" data-cell-index="638" class="cell"></div>
+				</div>
+				<div id="7004" data-cell-index="7004" class="board">
+					<div id="640" data-cell-index="640" class="cell"></div>
+					<div id="641" data-cell-index="641" class="cell"></div>
+					<div id="642" data-cell-index="642" class="cell"></div>
+					<div id="643" data-cell-index="643" class="cell"></div>
+					<div id="644" data-cell-index="644" class="cell"></div>
+					<div id="645" data-cell-index="645" class="cell"></div>
+					<div id="646" data-cell-index="646" class="cell"></div>
+					<div id="647" data-cell-index="647" class="cell"></div>
+					<div id="648" data-cell-index="648" class="cell"></div>
+				</div>
+				<div id="7005" data-cell-index="7005" class="board">
+					<div id="650" data-cell-index="650" class="cell"></div>
+					<div id="651" data-cell-index="651" class="cell"></div>
+					<div id="652" data-cell-index="652" class="cell"></div>
+					<div id="653" data-cell-index="653" class="cell"></div>
+					<div id="654" data-cell-index="654" class="cell"></div>
+					<div id="655" data-cell-index="655" class="cell"></div>
+					<div id="656" data-cell-index="656" class="cell"></div>
+					<div id="657" data-cell-index="657" class="cell"></div>
+					<div id="658" data-cell-index="658" class="cell"></div>
+				</div>
+				<div id="7006" data-cell-index="7006" class="board">
+					<div id="660" data-cell-index="660" class="cell"></div>
+					<div id="661" data-cell-index="661" class="cell"></div>
+					<div id="662" data-cell-index="662" class="cell"></div>
+					<div id="663" data-cell-index="663" class="cell"></div>
+					<div id="664" data-cell-index="664" class="cell"></div>
+					<div id="665" data-cell-index="665" class="cell"></div>
+					<div id="666" data-cell-index="666" class="cell"></div>
+					<div id="667" data-cell-index="667" class="cell"></div>
+					<div id="668" data-cell-index="668" class="cell"></div>
+				</div>
+				<div id="7007" data-cell-index="7007" class="board">
+					<div id="670" data-cell-index="670" class="cell"></div>
+					<div id="671" data-cell-index="671" class="cell"></div>
+					<div id="672" data-cell-index="672" class="cell"></div>
+					<div id="673" data-cell-index="673" class="cell"></div>
+					<div id="674" data-cell-index="674" class="cell"></div>
+					<div id="675" data-cell-index="675" class="cell"></div>
+					<div id="676" data-cell-index="676" class="cell"></div>
+					<div id="677" data-cell-index="677" class="cell"></div>
+					<div id="678" data-cell-index="678" class="cell"></div>
+				</div>
+				<div id="7008" data-cell-index="7008" class="board">
+					<div id="680" data-cell-index="680" class="cell"></div>
+					<div id="681" data-cell-index="681" class="cell"></div>
+					<div id="682" data-cell-index="682" class="cell"></div>
+					<div id="683" data-cell-index="683" class="cell"></div>
+					<div id="684" data-cell-index="684" class="cell"></div>
+					<div id="685" data-cell-index="685" class="cell"></div>
+					<div id="686" data-cell-index="686" class="cell"></div>
+					<div id="687" data-cell-index="687" class="cell"></div>
+					<div id="688" data-cell-index="688" class="cell"></div>
+				</div>
+			</div>
+			<div class="game">
+				<div id="8000" data-cell-index="8000" class="board">
+					<div id="700" data-cell-index="700" class="cell"></div>
+					<div id="701" data-cell-index="701" class="cell"></div>
+					<div id="702" data-cell-index="702" class="cell"></div>
+					<div id="703" data-cell-index="703" class="cell"></div>
+					<div id="704" data-cell-index="704" class="cell"></div>
+					<div id="705" data-cell-index="705" class="cell"></div>
+					<div id="706" data-cell-index="706" class="cell"></div>
+					<div id="707" data-cell-index="707" class="cell"></div>
+					<div id="708" data-cell-index="708" class="cell"></div>
+				</div>
+				<div id="8001" data-cell-index="8001" class="board">
+					<div id="710" data-cell-index="710" class="cell"></div>
+					<div id="711" data-cell-index="711" class="cell"></div>
+					<div id="712" data-cell-index="712" class="cell"></div>
+					<div id="713" data-cell-index="713" class="cell"></div>
+					<div id="714" data-cell-index="714" class="cell"></div>
+					<div id="715" data-cell-index="715" class="cell"></div>
+					<div id="716" data-cell-index="716" class="cell"></div>
+					<div id="717" data-cell-index="717" class="cell"></div>
+					<div id="718" data-cell-index="718" class="cell"></div>
+				</div>
+				<div id="8002" data-cell-index="8002" class="board">
+					<div id="720" data-cell-index="720" class="cell"></div>
+					<div id="721" data-cell-index="721" class="cell"></div>
+					<div id="722" data-cell-index="722" class="cell"></div>
+					<div id="723" data-cell-index="723" class="cell"></div>
+					<div id="724" data-cell-index="724" class="cell"></div>
+					<div id="725" data-cell-index="725" class="cell"></div>
+					<div id="726" data-cell-index="726" class="cell"></div>
+					<div id="727" data-cell-index="727" class="cell"></div>
+					<div id="728" data-cell-index="728" class="cell"></div>
+				</div>
+				<div id="8003" data-cell-index="8003" class="board">
+					<div id="730" data-cell-index="730" class="cell"></div>
+					<div id="731" data-cell-index="731" class="cell"></div>
+					<div id="732" data-cell-index="732" class="cell"></div>
+					<div id="733" data-cell-index="733" class="cell"></div>
+					<div id="734" data-cell-index="734" class="cell"></div>
+					<div id="735" data-cell-index="735" class="cell"></div>
+					<div id="736" data-cell-index="736" class="cell"></div>
+					<div id="737" data-cell-index="737" class="cell"></div>
+					<div id="738" data-cell-index="738" class="cell"></div>
+				</div>
+				<div id="8004" data-cell-index="8004" class="board">
+					<div id="740" data-cell-index="740" class="cell"></div>
+					<div id="741" data-cell-index="741" class="cell"></div>
+					<div id="742" data-cell-index="742" class="cell"></div>
+					<div id="743" data-cell-index="743" class="cell"></div>
+					<div id="744" data-cell-index="744" class="cell"></div>
+					<div id="745" data-cell-index="745" class="cell"></div>
+					<div id="746" data-cell-index="746" class="cell"></div>
+					<div id="747" data-cell-index="747" class="cell"></div>
+					<div id="748" data-cell-index="748" class="cell"></div>
+				</div>
+				<div id="8005" data-cell-index="8005" class="board">
+					<div id="750" data-cell-index="750" class="cell"></div>
+					<div id="751" data-cell-index="751" class="cell"></div>
+					<div id="752" data-cell-index="752" class="cell"></div>
+					<div id="753" data-cell-index="753" class="cell"></div>
+					<div id="754" data-cell-index="754" class="cell"></div>
+					<div id="755" data-cell-index="755" class="cell"></div>
+					<div id="756" data-cell-index="756" class="cell"></div>
+					<div id="757" data-cell-index="757" class="cell"></div>
+					<div id="758" data-cell-index="758" class="cell"></div>
+				</div>
+				<div id="8006" data-cell-index="8006" class="board">
+					<div id="760" data-cell-index="760" class="cell"></div>
+					<div id="761" data-cell-index="761" class="cell"></div>
+					<div id="762" data-cell-index="762" class="cell"></div>
+					<div id="763" data-cell-index="763" class="cell"></div>
+					<div id="764" data-cell-index="764" class="cell"></div>
+					<div id="765" data-cell-index="765" class="cell"></div>
+					<div id="766" data-cell-index="766" class="cell"></div>
+					<div id="767" data-cell-index="767" class="cell"></div>
+					<div id="768" data-cell-index="768" class="cell"></div>
+				</div>
+				<div id="8007" data-cell-index="8007" class="board">
+					<div id="770" data-cell-index="770" class="cell"></div>
+					<div id="771" data-cell-index="771" class="cell"></div>
+					<div id="772" data-cell-index="772" class="cell"></div>
+					<div id="773" data-cell-index="773" class="cell"></div>
+					<div id="774" data-cell-index="774" class="cell"></div>
+					<div id="775" data-cell-index="775" class="cell"></div>
+					<div id="776" data-cell-index="776" class="cell"></div>
+					<div id="777" data-cell-index="777" class="cell"></div>
+					<div id="778" data-cell-index="778" class="cell"></div>
+				</div>
+				<div id="8008" data-cell-index="8008" class="board">
+					<div id="780" data-cell-index="780" class="cell"></div>
+					<div id="781" data-cell-index="781" class="cell"></div>
+					<div id="782" data-cell-index="782" class="cell"></div>
+					<div id="783" data-cell-index="783" class="cell"></div>
+					<div id="784" data-cell-index="784" class="cell"></div>
+					<div id="785" data-cell-index="785" class="cell"></div>
+					<div id="786" data-cell-index="786" class="cell"></div>
+					<div id="787" data-cell-index="787" class="cell"></div>
+					<div id="788" data-cell-index="788" class="cell"></div>
+				</div>
+			</div>
+			<div class="game">
+				<div id="9000" data-cell-index="9000" class="board">
+					<div id="800" data-cell-index="800" class="cell"></div>
+					<div id="801" data-cell-index="801" class="cell"></div>
+					<div id="802" data-cell-index="802" class="cell"></div>
+					<div id="803" data-cell-index="803" class="cell"></div>
+					<div id="804" data-cell-index="804" class="cell"></div>
+					<div id="805" data-cell-index="805" class="cell"></div>
+					<div id="806" data-cell-index="806" class="cell"></div>
+					<div id="807" data-cell-index="807" class="cell"></div>
+					<div id="808" data-cell-index="808" class="cell"></div>
+				</div>
+				<div id="9001" data-cell-index="9001" class="board">
+					<div id="810" data-cell-index="810" class="cell"></div>
+					<div id="811" data-cell-index="811" class="cell"></div>
+					<div id="812" data-cell-index="812" class="cell"></div>
+					<div id="813" data-cell-index="813" class="cell"></div>
+					<div id="814" data-cell-index="814" class="cell"></div>
+					<div id="815" data-cell-index="815" class="cell"></div>
+					<div id="816" data-cell-index="816" class="cell"></div>
+					<div id="817" data-cell-index="817" class="cell"></div>
+					<div id="818" data-cell-index="818" class="cell"></div>
+				</div>
+				<div id="9002" data-cell-index="9002" class="board">
+					<div id="820" data-cell-index="820" class="cell"></div>
+					<div id="821" data-cell-index="821" class="cell"></div>
+					<div id="822" data-cell-index="822" class="cell"></div>
+					<div id="823" data-cell-index="823" class="cell"></div>
+					<div id="824" data-cell-index="824" class="cell"></div>
+					<div id="825" data-cell-index="825" class="cell"></div>
+					<div id="826" data-cell-index="826" class="cell"></div>
+					<div id="827" data-cell-index="827" class="cell"></div>
+					<div id="828" data-cell-index="828" class="cell"></div>
+				</div>
+				<div id="9003" data-cell-index="9003" class="board">
+					<div id="830" data-cell-index="830" class="cell"></div>
+					<div id="831" data-cell-index="831" class="cell"></div>
+					<div id="832" data-cell-index="832" class="cell"></div>
+					<div id="833" data-cell-index="833" class="cell"></div>
+					<div id="834" data-cell-index="834" class="cell"></div>
+					<div id="835" data-cell-index="835" class="cell"></div>
+					<div id="836" data-cell-index="836" class="cell"></div>
+					<div id="837" data-cell-index="837" class="cell"></div>
+					<div id="838" data-cell-index="838" class="cell"></div>
+				</div>
+				<div id="9004" data-cell-index="9004" class="board">
+					<div id="840" data-cell-index="840" class="cell"></div>
+					<div id="841" data-cell-index="841" class="cell"></div>
+					<div id="842" data-cell-index="842" class="cell"></div>
+					<div id="843" data-cell-index="843" class="cell"></div>
+					<div id="844" data-cell-index="844" class="cell"></div>
+					<div id="845" data-cell-index="845" class="cell"></div>
+					<div id="846" data-cell-index="846" class="cell"></div>
+					<div id="847" data-cell-index="847" class="cell"></div>
+					<div id="848" data-cell-index="848" class="cell"></div>
+				</div>
+				<div id="9005" data-cell-index="9005" class="board">
+					<div id="850" data-cell-index="850" class="cell"></div>
+					<div id="851" data-cell-index="851" class="cell"></div>
+					<div id="852" data-cell-index="852" class="cell"></div>
+					<div id="853" data-cell-index="853" class="cell"></div>
+					<div id="854" data-cell-index="854" class="cell"></div>
+					<div id="855" data-cell-index="855" class="cell"></div>
+					<div id="856" data-cell-index="856" class="cell"></div>
+					<div id="857" data-cell-index="857" class="cell"></div>
+					<div id="858" data-cell-index="858" class="cell"></div>
+				</div>
+				<div id="9006" data-cell-index="9006" class="board">
+					<div id="860" data-cell-index="860" class="cell"></div>
+					<div id="861" data-cell-index="861" class="cell"></div>
+					<div id="862" data-cell-index="862" class="cell"></div>
+					<div id="863" data-cell-index="863" class="cell"></div>
+					<div id="864" data-cell-index="864" class="cell"></div>
+					<div id="865" data-cell-index="865" class="cell"></div>
+					<div id="866" data-cell-index="866" class="cell"></div>
+					<div id="867" data-cell-index="867" class="cell"></div>
+					<div id="868" data-cell-index="868" class="cell"></div>
+				</div>
+				<div id="9007" data-cell-index="9007" class="board">
+					<div id="870" data-cell-index="870" class="cell"></div>
+					<div id="871" data-cell-index="871" class="cell"></div>
+					<div id="872" data-cell-index="872" class="cell"></div>
+					<div id="873" data-cell-index="873" class="cell"></div>
+					<div id="874" data-cell-index="874" class="cell"></div>
+					<div id="875" data-cell-index="875" class="cell"></div>
+					<div id="876" data-cell-index="876" class="cell"></div>
+					<div id="877" data-cell-index="877" class="cell"></div>
+					<div id="878" data-cell-index="878" class="cell"></div>
+				</div>
+				<div id="9008" data-cell-index="9008" class="board">
+					<div id="880" data-cell-index="880" class="cell"></div>
+					<div id="881" data-cell-index="881" class="cell"></div>
+					<div id="882" data-cell-index="882" class="cell"></div>
+					<div id="883" data-cell-index="883" class="cell"></div>
+					<div id="884" data-cell-index="884" class="cell"></div>
+					<div id="885" data-cell-index="885" class="cell"></div>
+					<div id="886" data-cell-index="886" class="cell"></div>
+					<div id="887" data-cell-index="887" class="cell"></div>
+					<div id="888" data-cell-index="888" class="cell"></div>
+				</div>
+			</div>
+        </div>
+        <h2 class="game--status"></h2>
+		<!-- <h2 class="prev--move"></h2>
+		<h2 class="board--cells"></h2> -->
+		<div class='counters'>
+			<h2 class='playerX'>Player X Time: </h2>
+			<h2 class='playerO'>Player O Time: </h2>
+		</div>
+		<div class='moves'>
+			<h3 class='playerXmoves'>Player X Moves: </h3>
+			<h3 class='playerOmoves'>Player O Moves: </h3>
+		</div>
+		<br>
+		<button class="game--start">Start Game</button>
+        <button class="game--restart">Restart Game</button>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
